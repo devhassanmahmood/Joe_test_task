@@ -1,0 +1,8 @@
+<h1 class="font-semibold text-4xl text-gray-700 my-8">Failed Charges</h1>
+<%= render partial: 'transaction', locals: {transactions: @failed, color: '#FF0000', klass: 'failed' } %>
+
+<h1 class="font-semibold text-4xl text-gray-700 my-8"> Disputed Charges</h1>
+<%= render partial: 'transaction', locals: {transactions: @disputed, color: '#FF5400', klass: 'disputed' } %>
+
+<h1 class="font-semibold text-4xl text-gray-700 my-8">Successful Charges</h1>
+<%= render partial: 'transaction', locals: {transactions: @successful, color: '#fff', klass: 'successful' } %>
